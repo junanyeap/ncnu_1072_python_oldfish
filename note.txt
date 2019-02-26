@@ -1,0 +1,11 @@
+abs(): find absolute value
+  abs(-10) = 10
+
+complex: 
+    (1+5j) * (1-3j)
+  = (16+2j)
+
+del(): delete a defined
+  a = 10
+  del(a)
+

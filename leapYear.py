@@ -8,7 +8,8 @@ def leapYearJudge(year):
     return (year%4==0 and year%100!=0) or (year%400 == 0 and year % 3200 !=0)
 
 def main():
-    # 宣告變數year，存儲使用者輸入的年份
+    # [WRONG] 宣告變數year，存儲使用者輸入的年份
+    # define and link year with input()
     # int()目的在於改變輸入值的形態，由預設的str改成int
     year = int(input("Please input a year to judge if leapyear : "))
     
