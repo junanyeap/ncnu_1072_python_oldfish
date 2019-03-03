@@ -3,7 +3,7 @@
 # 2a
 
 #   input a b c , 3 float
-#   ax^2+by+c have any solution ?
+#   ax^2+bx+c have any solution ?
 #       wu jie , a & b ==0,but c!=0
 #       wu xian duo jie, a&b&c = 0
 #       yi jie x, a = 0, x = -c/b
@@ -11,7 +11,7 @@
  
 import cmath
 import math
-def calc(a,b,c,x,y) :
+def calc(a,b,c) :
     status = "noResult"
     if a == 0 and b == 0 and c != 0 :
         status = "no solution"
@@ -25,13 +25,15 @@ def calc(a,b,c,x,y) :
     return status
 
 def main() :
-    print("input a ax^2+by+c :")
-    a=float(input("a:"))
+    print("input a ax^2+bx+c :")
+    a=float(input("a:"))    
     b=float(input("b:"))
     c=float(input("c:"))
-    x=float(input("x:"))
-    y=float(input("y:"))
+    # x=float(input("x:"))
+    # y=float(input("y:"))
     # print(math.sqrt(c))
-    print(calc(a,b,c,x,y))
+    
+    print(calc(a,b,c))
+    # print(calc(a,b,c,x,y))
 
 main()
