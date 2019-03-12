@@ -37,6 +37,8 @@ def seqlen2(n):
     return count
 
 def findMaxLen(n,m) :
+    if n > m :
+        n,m = m,n
     i = n
     max = 0
     for i in range(n,m):
