@@ -1,6 +1,10 @@
+#學號：104213070
+#姓名：葉潤安
+
 lenghtSum = 0
 
 def sort(data):
+    # sort a 2D list element by his first-"D" element
     data = sorted(data, key=lambda x: x[0])
     print(data)
     return data 
@@ -15,10 +19,10 @@ def calcSegment(xylist):
     for i in range(len(xylist)):
         if xylist[i][0] <= end :
 
-            # next line is at current line, combine it
+            # next line is all inside current line, combine it
             if xylist[i][1] < end:
                 lenghtSum = lenghtSum
-            #  next line is half at current line, extends
+            #  next line is half inside current line, extends
             elif xylist[i][1] > end :
                 lenghtSum = lenghtSum + xylist[i][1] - end
                 # print("e",lenghtSum)
@@ -37,7 +41,7 @@ def main():
     global lenghtSum
     xylist = []
     print("APCS 線段長度計算")
-    # built in testData to skip input 
+    # built in testData to skip step of input 
     # xylist = [
     #     [160,180],
     #     [150,200],
