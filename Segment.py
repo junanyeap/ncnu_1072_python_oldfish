@@ -15,10 +15,10 @@ def calcSegment(xylist):
     for i in range(len(xylist)):
         if xylist[i][0] <= end :
 
-            # next line is at current line, combine it
+            # next line is all inside current line, combine it
             if xylist[i][1] < end:
                 lenghtSum = lenghtSum
-            #  next line is half at current line, extends
+            #  next line is half inside current line, extends
             elif xylist[i][1] > end :
                 lenghtSum = lenghtSum + xylist[i][1] - end
                 # print("e",lenghtSum)
