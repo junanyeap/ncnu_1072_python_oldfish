@@ -1,6 +1,10 @@
+#學號：104213070
+#姓名：葉潤安
+
 lenghtSum = 0
 
 def sort(data):
+    # sort a 2D list element by his first-"D" element
     data = sorted(data, key=lambda x: x[0])
     print(data)
     return data 
@@ -37,7 +41,7 @@ def main():
     global lenghtSum
     xylist = []
     print("APCS 線段長度計算")
-    # built in testData to skip input 
+    # built in testData to skip step of input 
     # xylist = [
     #     [160,180],
     #     [150,200],
