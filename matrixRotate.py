@@ -30,7 +30,6 @@ def main():
     print("OriMatrix:")
     for i in range(len(a)):
         print(a[i])
-    # a = input("input a list")
     matrixRotate(a)
 
 main()
