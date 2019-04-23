@@ -17,8 +17,9 @@ def matrixRotate(a):
     # flip
     flip = [[a[r-i-1][j] for j in range(c)] for i in range(r)]
     print("Result:")
-    for i in range(len(flip)):
-        print(flip[i])
+    print(rc90)
+    # for i in range(len(flip)):
+    #     print(rc90[i])
     
     # for j in range(r):
     #     for i in range(c):
