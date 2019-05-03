@@ -12,6 +12,7 @@ def myComb(data,n,m,valid,result):
         return
     for i in range(valid,n):
         result.append(data[i])
+        # myComb(data,n,m-1,i+1,result)
         myComb(data,n,m-data[i],i+1,result)
         result.pop()
 
