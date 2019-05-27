@@ -1,0 +1,5 @@
+hello world this is my first sentence
+A test line is seperated to many word by spaces
+hello world
+today is rainy day and my shoes is wet
+DVORAK

@@ -10,7 +10,7 @@ def myComb(data,n,m,valid,result):
     if m == 0:
         print(result)
         return
-    for i in range(valid,n):
+    for i in range(valid,n+1):
         result.append(data[i])
         # myComb(data,n,m-1,i+1,result)
         myComb(data,n,m-data[i],i+1,result)
